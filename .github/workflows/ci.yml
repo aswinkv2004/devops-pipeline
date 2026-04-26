@@ -1,3 +1,4 @@
+YAML
 name: ci pipeline
  on:
   push:
