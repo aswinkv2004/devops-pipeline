@@ -1,0 +1,14 @@
+{
+  
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run":"node index.js","name": "devops-pipeline-1",
+    "test": "node test.js"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
