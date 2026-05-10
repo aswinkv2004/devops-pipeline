@@ -1,23 +1,24 @@
 name :ci pipeline
-"on":
+ on:
   push:
-    branches:
-      - main
+   branches:
+    - main
 
-jobs:
+ jobs:
   build:
-  runs-on:ubunta-latest
+   runs -on:ububtu -latest
+
   steps:
-    -name:checkout code
-    uses:action/checkout@v5
+   -name:checkout code
+    uses:actions/checkout@v5
 
     -name:set up node.js
-    uses:actions/set up-node@v3
-    with:
-        node-version: 16
-
+     uses:actions/setups -node@v3
+      with:
+         node-version 16
+    
     -name:install dependencies
-    run:npm install
+     run:npm install
 
     -name:run test
-    run:npn tests
+     run:npm test
